@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1076</id>
+	<name>iPad iOS regression</name>
+	<description>All Expedia Bookings Tablet test cases</description>
+	<sections>
+		<section>
+		<name>TABLET</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Flights</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Flights_search</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Flights_checkout</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C112827</id>
+				<title>Logged-In user &gt; Flight checkout with 1 adult &gt; Verify confirmation screen and elements</title>
+												<type>Regression</type>
+																<priority>1 - Must Test</priority>
+												
+				<estimate>180</estimate>
+																																<references></references> 
+																<custom>
+										<preconds>User should be logged in with valid Expedia account</preconds>
+										<steps>1. Search for any city
+2. Select random travel dates
+3. Add 1 adult to the trip
+4. Select random flight
+5. Checkout filling in all necessary personal and payment info</steps>
+										<expected>User should be able to checkout with selected flight
+User should be prompted with booking confirmation after checkout
+User should see the following on confirmation screen:
+ 1.Booked message &quot;Booking Confirmed&quot;
+ 2.Itinerary number.
+ 3.Correct email.
+ 4.Add to passbook (phone)
+ 5.Add to calendar.
+ 6.Share via email.
+ 7.Hotel name.
+ 8.Days of stay.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C112828</id>
+				<title>Logged-In user &gt; Flight checkout with 1 adult + 1 child &gt; Verify confirmation screen and elements</title>
+												<type>Regression</type>
+																<priority>1 - Must Test</priority>
+												
+				<estimate>180</estimate>
+																																<references></references> 
+																<custom>
+										<preconds>User should be logged in with valid Expedia account</preconds>
+										<steps>1. Search for any city
+2. Select random travel dates
+3. Add 1 adult to the trip
+4. Select random flight
+5. Checkout filling in all necessary personal and payment info</steps>
+										<expected>User should be able to checkout with selected flight
+User should be prompted with booking confirmation after checkout
+User should see the following on confirmation screen:
+ 1.Booked message &quot;Booking Confirmed&quot;
+ 2.Itinerary number.
+ 3.Correct email.
+ 4.Add to passbook (phone)
+ 5.Add to calendar.
+ 6.Share via email.
+ 7.Hotel name.
+ 8.Days of stay.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C116068</id>
+				<title>Guest User &gt; Book Hotel &gt; Verify zip code filed present at checkout for CA, UK, US POS</title>
+												<type>Regression</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate></estimate>
+																																<references></references> 
+																<custom>
+										<preconds>User must be a guest user, not signed in.
+Must be checked in CA, UK, US POS</preconds>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Hotels</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Hotels_checkout</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C112829</id>
+				<title>Guest User &gt; Book Hotel &gt; Verify zip code filed present at checkout for CA, UK, US POS</title>
+												<type>Regression</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate>300</estimate>
+																																	<milestone>4.2</milestone> 
+																<references></references> 
+																<custom>
+										<preconds>User must be a guest user, not signed in.
+Must be checked in CA, UK, US POS.</preconds>
+										<steps>Test
+
+</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C112830</id>
+				<title>Logged-In user &gt; Hotel checkout with 1 adult &gt; Verify confirmation screen and elements</title>
+												<type>Manual</type>
+																<priority>1 - Must Test</priority>
+												
+				<estimate>180</estimate>
+																																<references></references> 
+																<custom>
+										<preconds>User should be logged in with valid Expedia Account</preconds>
+										<steps>1. Search for any city
+2. Select random travel dates
+3. Add 1 adult to the trip
+4. Select random hotel
+5. Checkout filling in all necessary personal and payment info</steps>
+										<expected>User should be able to checkout with selected hotel
+User should be prompted with booking confirmation after checkout
+User should see the following on confirmation screen:
+ 1.Booked message &quot;Booking Confirmed&quot;
+ 2.Itinerary number.
+ 3.Correct email.
+ 4.Add to passbook (phone)
+ 5.Add to calendar.
+ 6.Share via email.
+ 7.Hotel name.
+ 8.Days of stay.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C112831</id>
+				<title>Logged-In user &gt; Hotel checkout with 1 adult + 1 child &gt; Verify confirmation screen and elements</title>
+												<type>Regression</type>
+																<priority>1 - Must Test</priority>
+												
+				<estimate>180</estimate>
+																																<references></references> 
+																<custom>
+										<preconds>User should be logged in with valid Expedia Account</preconds>
+										<steps>1. Search for any city
+2. Select random travel dates
+3. Add 1 adult to the trip
+4. Select random hotel
+5. Checkout filling in all necessary personal and payment info</steps>
+										<expected>User should be able to checkout with selected hotel
+User should be prompted with booking confirmation after checkout
+User should see the following on confirmation screen:
+ 1.Booked message &quot;Booking Confirmed&quot;
+ 2.Itinerary number.
+ 3.Correct email.
+ 4.Add to passbook (phone)
+ 5.Add to calendar.
+ 6.Share via email.
+ 7.Hotel name.
+ 8.Days of stay.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C116074</id>
+				<title>Hotel checkout &gt; Confirmation page</title>
+												<type>Regression</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate>240</estimate>
+																																<references></references> 
+																<custom>
+										<steps>1.Open EB App.
+2.Add any hotel into the Trip bucket and go to Checkout.
+3.Book the hotel.
+4.Expect the Booking Confirmed page.
+
+Booked message &quot;Your hotel is booked!&quot;
+1. Hotel Name.
+2. Days of stay.
+3. Add to calendar.
+4. Share Stay.
+5. Itinerary number.
+6. Correct email.
+7. Done Shopping (button)</steps>
+										<expected>The functionality should work without any issues.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C116075</id>
+				<title>Checking # of travelers showing in the guest icon</title>
+												<type>Regression</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate></estimate>
+																																<references></references> 
+																<custom>
+										<expected>All functionality should work without any issues</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Hotels_search</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C116069</id>
+				<title>Launch page &gt; Search hotel by name &gt; Add to trip &gt; Verify added to trip</title>
+												<type>Regression</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate>240</estimate>
+																																<references></references> 
+																<custom>
+										<steps>1.Open EB App.
+2.Click on the &quot;Enter your destination&quot; field.
+3.Type any hotel name.
+4.Select your hotel from the suggestion list below.
+5.The Search page will open with selected Hotel details.
+6.Rotate device to Portrait and Landscape
+7.Select any room and add hotel to the Trip.
+8.Confirm that Hotel was added into the Trip.</steps>
+										<expected>The functionality should work without any issues.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C116070</id>
+				<title>Launch page &gt; Search hotel by destination &gt; Add to trip &gt; Verify added to trip</title>
+												<type>Regression</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate>240</estimate>
+																																<references></references> 
+																<custom>
+										<steps>2.Click on the &quot;Enter your destination&quot; field.
+3.Search for any destination.
+4.Select your destination from the suggestion list below.
+5.The Search page will open with Hotels tonight.
+6.Search the Hotels with:
+
+a)different days selected
+b)with multiple travelers
+c)rotate device to Portrait and Landscape
+d)select Hotel from the list
+e)swipe the Hotels column upward
+f)open Sort and Filter and filter the Hotels with every possible way
+g)filter Hotels by Neighborhood
+
+7.Select any Hotel and Add it to the Trip.
+8.Confirm that Hotel was added into the Trip.</steps>
+										<expected>The functionality should work without any issues.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C116071</id>
+				<title>Launch page &gt; Search hotel by bubbles &gt; Add to trip &gt; Verify added to trip</title>
+												<type>Regression</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate>240</estimate>
+																																<references></references> 
+																<custom>
+										<steps>2.Click on any bubble.
+3.Click on Explore Now.
+4.The Search page will open with Hotels tonight.
+5.Search the Hotels with:
+
+a)different days selected
+b)with multiple travelers
+c)rotate device to Portrait and Landscape
+d)select Hotel from the list
+e)swipe the Hotels column upward
+f)open Sort and Filter and filter the Hotels with every possible way
+g)filter Hotels by Neighborhood
+
+6.Select any Hotel and Add it to the Trip.
+7.Confirm that Hotel was added into the Trip.</steps>
+										<expected>The functionality should work without any issues.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C116072</id>
+				<title>Launch page &gt; Search hotel by getaways &gt; Add to trip &gt; Verify added to trip</title>
+												<type>Regression</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate>240</estimate>
+																																<references></references> 
+																<custom>
+										<steps>1.Open EB App.
+2.Click on any Getaway.
+3.Click on any bubble.
+4.Click on Explore Now.
+5.The Search page will open with Hotels tonight.
+6.Search the Hotels with:
+
+a)different days selected
+b)with multiple travelers
+c)rotate device to Portrait and Landscape
+d)select Hotel from the list
+e)swipe the Hotels column upward
+f)open Sort and Filter and filter the Hotels with every possible way
+g)filter Hotels by Neighborhood
+
+7.Select any Hotel and Add it to the Trip.
+8.Confirm that Hotel was added into the Trip.</steps>
+										<expected>The functionality should work without any issues.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Hotels_filter</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C116076</id>
+				<title>Launch page &gt; Search hotel &gt; Verify hotel filter functionality</title>
+												<type>Automated</type>
+																<priority>2 - Must Test</priority>
+												
+				<estimate>180</estimate>
+																																<references></references> 
+															</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
